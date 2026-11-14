@@ -12,6 +12,11 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080`.
 
+## Pages
+
+- Home: `http://localhost:8080/index.html`
+- Gallery (images from `assets`): `http://localhost:8080/gallery.html`
+
 ## Publish with GitHub Pages
 
 1. Push this repository to GitHub.

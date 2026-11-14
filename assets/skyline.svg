@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Skyline</title>
+  <desc id="desc">Stylized skyline against a blue sky.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#83c5ff" />
+      <stop offset="100%" stop-color="#1d4e89" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)" />
+  <rect x="40" y="250" width="120" height="250" fill="#0f2748" />
+  <rect x="190" y="200" width="150" height="300" fill="#173c6d" />
+  <rect x="360" y="230" width="110" height="270" fill="#0f2748" />
+  <rect x="500" y="170" width="150" height="330" fill="#173c6d" />
+  <rect x="680" y="220" width="80" height="280" fill="#0f2748" />
+  <rect y="460" width="800" height="40" fill="#0a1a2f" />
+</svg>
