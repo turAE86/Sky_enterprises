@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Horizon</title>
+  <desc id="desc">Minimal horizon with sun and mountains.</desc>
+  <defs>
+    <linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffddd2" />
+      <stop offset="100%" stop-color="#89c2ff" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#dawn)" />
+  <circle cx="580" cy="130" r="55" fill="#ffd166" />
+  <polygon points="0,420 180,250 360,420" fill="#3d5a80" />
+  <polygon points="220,420 430,210 640,420" fill="#2c4875" />
+  <polygon points="500,420 680,260 800,420" fill="#3d5a80" />
+  <rect y="420" width="800" height="80" fill="#1d3557" />
+</svg>
