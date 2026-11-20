@@ -224,25 +224,25 @@ export default function HomePage() {
         <section className="info-grid container">
           <div className="contact-strip">
             <div className="contact-box">
-              <div className="circle-icon">◉</div>
+              <div className="circle-icon">👤</div>
               <div>
                 <h3>Mr. Sumeet Yadav</h3>
-                <p>skywarehouse@gmail.com</p>
-                <p>+91 8828041865</p>
+                <p><a href="mailto:skywarehouse@gmail.com">skywarehouse@gmail.com</a></p>
+                <p><a href="tel:+918828041865">+91 8828041865</a></p>
               </div>
             </div>
             <div className="contact-box">
-              <div className="circle-icon">◉</div>
+              <div className="circle-icon">👤</div>
               <div>
                 <h3>Mr. Sujeet Yadav</h3>
-                <p>sujeet.skygroup@gmail.com</p>
-                <p>+91 8692918776</p>
+                <p><a href="mailto:sujeet.skygroup@gmail.com">sujeet.skygroup@gmail.com</a></p>
+                <p><a href="tel:+918692918776">+91 8692918776</a></p>
               </div>
             </div>
           </div>
 
           <div className="address-block">
-            <div className="location-pin">⌖</div>
+            <div className="location-pin"><a href="https://maps.app.goo.gl/EYErUBHMuRNxoFU47">📍</a></div>
             <div>
               <h3>ADDRESS:</h3>
               <p>Gala No. 10, Building No.18, Sahita Complex, Near Sakinaka Telephone Exchange Sakinaka Mumbai.</p>
