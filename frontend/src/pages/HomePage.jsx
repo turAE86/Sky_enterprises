@@ -83,14 +83,14 @@ const posterServices = [
 ]
 
 const dangerBadgeList = [
-  'Explosive',
-  'Flammable',
-  'Oxidizer',
-  'Toxic',
-  'Corrosive',
-  'Radioactive',
-  'Miscellaneous',
-]
+  '💥 Explosives',
+  '🔥 Flammable',
+  '🧪 Oxidizer',
+  '☠️ Toxic',
+  '🧪 Corrosive',
+  '☢️ Radioactive',
+  '⚠️ Miscellaneous',
+];
 
 export default function HomePage() {
   const [formData, setFormData] = useState(initialForm)
@@ -330,7 +330,9 @@ export default function HomePage() {
                 <li><strong>Phone 1:</strong> {companyProfile.contact.primaryPhone}</li>
                 <li><strong>Contact 2:</strong> {companyProfile.contact.secondaryEmail}</li>
                 <li><strong>Phone 2:</strong> {companyProfile.contact.secondaryPhone}</li>
+                <li><strong>GST No:</strong> 23439042h343k450h023</li>
                 <li><strong>Address:</strong> {companyProfile.address}</li>
+                <li><strong><img src="/image-removebg-preview.png" alt="Company Logo" /></strong></li>
               </ul>
             </div>
             <form className="quote-form" onSubmit={handleSubmit}>

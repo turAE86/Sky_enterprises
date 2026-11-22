@@ -28,7 +28,7 @@ export default function Navbar() {
           onClick={scrollToTop}
           style={{ gap: '0' }}
         >
-          <img className="brand-logo" src="/image-removebg-preview.png" alt="Sky" />
+          <img className="brand-logo" src="/image-removebg-preview.png" alt="Sky" style={{ width: '5rem' }} />
           <div className="brand-copy">
             <small style={{ fontSize: '1.2rem', whiteSpace: 'nowrap' }}>Enterprises</small>
           </div>
