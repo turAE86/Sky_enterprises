@@ -112,9 +112,19 @@ export default function HomePage() {
         from_name: formData.name,
         company: formData.company,
         email: formData.email,
+        reply_to: formData.email,
         phone: formData.phone,
         service: formData.service,
-        message: formData.message,
+        message: [
+          `Name: ${formData.name}`,
+          `Company: ${formData.company || 'Not provided'}`,
+          `Email: ${formData.email}`,
+          `Phone: ${formData.phone}`,
+          `Service: ${formData.service || 'Not specified'}`,
+          '',
+          'Message:',
+          formData.message,
+        ].join('\n'),
       }
 
       await emailjs.send(
@@ -201,13 +211,19 @@ export default function HomePage() {
 
             <div className="visual-collage">
               <div className="cargo-card cargo-1">
-                <img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1200&q=80" alt="Cargo ship at a port" />
+                <img src="https://m.media-amazon.com/images/I/61JYm9vhnyL._AC_UF350,350_QL80_.jpg" alt="Cargo ship at a port" />
               </div>
               <div className="cargo-card cargo-2">
-                <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80" alt="Airplane ready for cargo transport" />
+                <img src="https://images.unsplash.com/photo-1571086291540-b137111fa1c7?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Airplane ready for cargo transport" />
               </div>
               <div className="cargo-card cargo-3">
-                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80" alt="Organized warehouse storage" />
+                <img src="https://images.pexels.com/photos/28520996/pexels-photo-28520996/free-photo-of-blue-freight-truck-on-desert-highway.jpeg" alt="Organized warehouse storage" />
+              </div>
+              <div className="cargo-card cargo-4">
+                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80" alt="Road freight truck transporting cargo" />
+              </div>
+              <div className="cargo-card cargo-5">
+                <img src="https://images.unsplash.com/photo-1670121180530-cfcba4438038?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Cargo packed and ready for dispatch" />
               </div>
             </div>
           </div>

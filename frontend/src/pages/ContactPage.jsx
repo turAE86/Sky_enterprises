@@ -31,9 +31,19 @@ export default function ContactPage() {
         from_name: formData.name,
         company: formData.company,
         email: formData.email,
+        reply_to: formData.email,
         phone: formData.phone,
         service: formData.service,
-        message: formData.message,
+        message: [
+          `Name: ${formData.name}`,
+          `Company: ${formData.company || 'Not provided'}`,
+          `Email: ${formData.email}`,
+          `Phone: ${formData.phone}`,
+          `Service: ${formData.service || 'Not specified'}`,
+          '',
+          'Message:',
+          formData.message,
+        ].join('\n'),
       }
 
       await emailjs.send(
